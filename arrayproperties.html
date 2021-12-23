@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fruitnames = ["apple", "banana", "orange", "grapes"];
+      document.writeln(fruitnames.length);
+      document.writeln(fruitnames[fruitnames.length - 2]);
+
+      //   concat
+      const firstnames = ["hello", "hai", "how r u"];
+      const allnames = fruitnames.concat(fruitnames);
+      document.writeln(allnames + "<br/>");
+
+      //   reverse
+      document.write(allnames.reverse());
+
+      //   push
+      allnames.push("strawberries");
+      document.writeln(allnames);
+
+      //   pop
+      allnames.pop();
+      document.writeln(allnames);
+      allnames.pop();
+      document.writeln(allnames);
+      allnames.pop();
+      document.writeln(allnames);
+
+      //   unshift add as many element as given
+      allnames.unshift("redbarries", "bluebarries", "greenbarries");
+      document.write(allnames + "<br/>");
+
+      //   shift only removees first element(here we no need to pass paramers)
+      allnames.shift("redbarries", "bluebarries", "greenbarries");
+      document.write(allnames);
+    </script>
+  </body>
+</html>

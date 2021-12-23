@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const firstname = "surya";
+      const age = 27;
+
+      const sentence =
+        "hey it's " + firstname + " she's is " + age + " years old";
+      document.write(sentence + "<br/>");
+
+      //   const value = 'hey it\'s ' + firstname + ' she\'s is ' + age + ' years old';
+
+      // In prettier it convert in single quotation('') into double quotation("")
+      const value = `hey it's ${firstname} she's is  ${age}  years old`;
+
+      document.write(value + "<br/>");
+
+      // if we use "${4+6}" you will not get output
+      const data = `${4 + 6}`;
+      document.write(data);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      const days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturtday",
+      ];
+
+      const date = new Date();
+      //   document.write(date);
+
+      const month = date.getMonth();
+      document.write(months[month] + "<br/>");
+
+      const weekDay = date.getDay();
+      document.write(days[weekDay] + "<br/>");
+
+      document.write(date.getFullYear() + "<br/>");
+
+      document.write(date.getYear() + "<br/>");
+
+      document.write(date.getDate());
+
+      const sentence = `${days[weekDay]},${date.getDate()} / ${
+        months[month]
+      } / ${date.getFullYear()}`;
+
+      console.log(sentence);
+
+      console.log(date.getTime());
+
+      //   DOM
+      //   document.body.innerHTML = sentence;
+    </script>
+  </body>
+</html>
